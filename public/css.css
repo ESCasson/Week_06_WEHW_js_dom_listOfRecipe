@@ -1,0 +1,59 @@
+ body {
+  font-family: 'Karma', serif;
+  color: #19151B;
+   background-color: #EAE7E6;
+   margin: 60px;
+   border-style: solid;
+   border-width: 10px;
+   border-color: #603D37;
+   padding: 30px;
+   min-height: 500px;
+ }
+
+ .header {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+
+ .form-container {
+   padding: 10px;
+   background-color: #847986;
+   justify: center;
+   justify-content: center;
+   width: 100%;
+   font-size: 20px
+ }
+
+
+h1, h2, h3, form {
+font-family: 'Shadows Into Light', cursive;
+ }
+
+ form {
+  display: flex;
+  justify-content: space-between;
+ }
+
+.recipe-list {
+  display: flex;
+  justify-content: space-between
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around
+}
+
+li {
+  padding: 20px;
+  margin: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10%
+}
+
+footer {
+  background-color: #556AAA
+}

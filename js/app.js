@@ -42,8 +42,20 @@ deleteAllButton.addEventListener('click', handleDeleteAllClick);
     url.textContent = `Link to Recipe`;
     recipeListItem.appendChild(url);
 
+    const formInRecipeItem = document.createElement('form');
+    const labelInForm = document.createElement('label');
+    labelInForm.textContent = 'Have you made this recipe?'
+
+    
+
+    recipeListItem.appendChild(formInRecipeItem);
+    formInRecipeItem.appendChild(labelInForm);
+
+
+
     return recipeListItem;
   }
+
 
 
   const handleDeleteAllClick = function (event) {
