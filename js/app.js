@@ -42,15 +42,30 @@ deleteAllButton.addEventListener('click', handleDeleteAllClick);
     url.textContent = `Link to Recipe`;
     recipeListItem.appendChild(url);
 
-    const formInRecipeItem = document.createElement('form');
-    const labelInForm = document.createElement('label');
-    labelInForm.textContent = 'Have you made this recipe?'
 
-    
+      const formInRecipeItem = document.createElement('form');
+      formInRecipeItem.classContent = 'haveMadeDifferculty';
+      const labelInFormYes = document.createElement('label');
+      labelInFormYes.textContent = 'Have you made this recipe? Yes';
+      const haveMadeRadioYes = document.createElement('input');
+        haveMadeRadioYes.type ='radio';
+        haveMadeRadioYes.name ='haveMade';
+        haveMadeRadioYes.value ='yes';
+        haveMadeRadioYes.textContent = 'Yes';
+      const labelInFormNo = document.createElement('label');
+      labelInFormNo.textContent = 'No';
+
+      const haveMadeRadioNo = document.createElement('input');
+        haveMadeRadioNo.type ='radio';
+        haveMadeRadioNo.name ='haveMade';
+        haveMadeRadioNo.value ='no';
+        haveMadeRadioNo.textContent = 'No';
 
     recipeListItem.appendChild(formInRecipeItem);
-    formInRecipeItem.appendChild(labelInForm);
-
+    formInRecipeItem.appendChild(labelInFormYes);
+    formInRecipeItem.appendChild(haveMadeRadioYes);
+    formInRecipeItem.appendChild(labelInFormNo);
+    formInRecipeItem.appendChild(haveMadeRadioNo);
 
 
     return recipeListItem;
@@ -58,7 +73,9 @@ deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
 
 
+
+
   const handleDeleteAllClick = function (event) {
-    const recipeList = document.querySelector('#recipeList');
+    const recipeList = document.querySelector('ul');
     recipeList.innerHTML = '';
   }
